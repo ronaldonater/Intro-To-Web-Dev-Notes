@@ -1,0 +1,40 @@
+*{
+    /* margin:0;
+    padding:0; */
+    box-sizing: border-box;
+}
+body{
+    font-size:16px;
+}
+h1{
+    font-size:45px; 
+}
+p{
+    color:dimgray;
+    font-size:20px;
+}
+.intro{
+    color:blue; /* will not do anything while the copy selector is present (both contain the copy class)*/
+    font-weight:bold;
+}
+.copy{
+    color:dimgray;
+}
+.capitalized{
+    text-transform:capitalize;
+}
+.uppercase{
+    text-transform:uppercase;
+}
+.lowercase{
+    text-transform:lowercase;
+}
+.copyright{
+    text-align:center;
+}
+.no-underline{
+    text-decoration:none;
+}
+.drop{
+    font-size:50px;
+}

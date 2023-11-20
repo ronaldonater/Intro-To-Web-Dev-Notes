@@ -1,0 +1,60 @@
+/*
+    Code Demo - CSC 225
+    Mar 2 - 9, 2023
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+div{
+    border:1px solid red;
+    width:250px;
+    height:250px;
+    font-size:2rem;
+}
+.relative{
+    position:relative;
+}
+.div-one{
+    top:100px;
+   left:50px;
+}
+.parent{
+    left:40%;
+}
+.child{
+    border:1px solid red;
+    display:inline-block;
+    width:auto;
+    height:auto;
+    position:absolute;
+    top:40%;
+}
+.fixed{
+    position:fixed;
+    top:500px;
+    right:20px;
+}
+
+.sticky{
+    position:sticky;
+    top:0;
+}
+
+.regular-div{
+    /* width:900px; */
+    min-width:500px;
+    max-width:550px;
+    height:750px;
+    min-height:50px;
+    max-height:300px;
+}
+.rounded{
+    border-radius:50%;
+    border:1px solid red;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}

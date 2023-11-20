@@ -1,0 +1,146 @@
+/* 
+
+HW 2 - CSC 225 Assignment Instructions
+
+DO NOT REMOVE THE INSTRUCTIONAL COMMENTS PROVIDED BELOW. 
+
+DO NOT MODIFY THE HTML FILE. USE THE MARKUP AS-IS.
+
+Provide your solution directly below each comment.
+
+*/
+
+/* 1. Ensure that the body element is horizontally justified/centered inside its parent container. */
+
+body{
+
+    display:flex;
+    align-items: center;
+
+}
+
+/* 2. Add a horizontal padding of 10% to the main*/
+
+.main{
+
+    padding:10%;
+}
+
+/* 3.Class Selector Only: Change the shopping list bullet points to upper roman numerals */
+
+.shopping-list{
+
+    list-style-type: upper-roman;
+}
+
+/* 4. Turn the following list items red: Bread, Butter */
+
+.shopping-list :nth-child(2),
+.shopping-list :nth-child(5){
+
+    color: red;
+
+}
+
+/* 5. Ensure that all visited website links appear in the following color code: #008000 */
+
+a:visited{
+    color:#008000;
+}
+
+/* 6. Apply a margin of 25 px before and after the article element with a class of 'prose'. */
+
+.prose{
+    margin: 25px;
+}
+
+/* 7. There is an article element with a class-name of 'prose' in the markup. Change the font-family of all paragraphs nested directly inside (children) to:'Open Sans' with a fallback for arial followed by sans-serif. */
+
+.prose >p{
+
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+/* 8. Select the first paragraph using its id and change the contained text to bold */
+
+#opening-lines{
+    font-weight: bold;
+}
+
+/* 9. Select the first displayed line of the first paragraph and change its font-size to 1.2rem */
+
+#opening-lines::first-line{
+    font-size: 1.2rem;
+}
+
+/* 10. Select the second paragraph using its classname. Convert the text in the second paragraph so that the first letter of each word is capitalized. */
+
+.second-paragraph{
+    text-transform: capitalize;
+}
+
+/* 11. Using the appropriate selector, implement the style to underline the contents of the last paragraph inside the article (only).*/
+
+.prose >p:last-of-type{
+    text-decoration: underline;
+}
+
+/* ------------------ */
+/* FLEXBOX EXERCISES */
+/* ------------------ */
+
+/* 12. Convert the div containers with the class-name of 'flex-container' to flex containers. */
+
+.flex-container{
+
+    display:flex;
+    flex-wrap: wrap;
+}
+
+/* 13. Implement the code to right-align the content horizontally inside the second flex-container.*/
+
+.flex-container:nth-of-type(2){
+    justify-content: flex-end;
+}
+
+/* 14. Implement the code to horizontally center the contents inside the third flex-container.*/
+
+.flex-container:nth-of-type(3){
+    justify-content: center;
+}
+
+/* 15. Vertically center the contents inside the fourth flex-container. */
+
+.flex-container:nth-of-type(4){
+    align-items: center;
+}
+
+/* 16. Change the fifth flex-container to display the content as a column in order (first at the top;fifth at the bottom). */
+
+.flex-container:nth-of-type(5){
+    flex-direction: column;
+}
+
+/* 17. Change the sixth flex-container to display the contents as column but in reverse order (first at the bottom;fifth at the top). */
+
+.flex-container:nth-of-type(6){
+    flex-direction: column-reverse;
+}
+
+/* 18. Change the seventh flex-container to display the contents (as a row) in reverse order (fifth first/at the left; first would be last/at the right end). */
+.flex-container:nth-of-type(7){
+    flex-direction: row-reverse;
+}
+
+/* 19. Change the background color of the page footer to #778899. */
+
+footer{
+    background-color:#778899;
+}
+
+
+/* 20. Change the color of the text in the page footer to rgb(255, 255, 255).*/
+
+footer{
+    color:rgb(255, 255, 255);
+}

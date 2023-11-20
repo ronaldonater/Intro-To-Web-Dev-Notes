@@ -1,0 +1,113 @@
+/*  
+    Code Demo - CSC 225 
+    Thursday, Feb 23, 2023
+ */
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border:1px solid red; */
+}
+
+body {
+    width: 70%;
+    height: 100%;
+    font-size: 1.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    /* Roboto is the imported Google Font */
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1::before,
+h1::after {
+    content: "-";
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3rem;
+}
+
+.intro::first-letter {
+    font-size: 40px;
+}
+
+.paras {
+    color: dimgray;
+}
+
+.paras :first-child {
+    color: red;
+}
+
+.paras :first-child>a {
+    display: block;
+}
+
+.paras :first-child>a:hover {
+    cursor: pointer;
+}
+
+
+/*
+.paras :nth-child(2),
+.paras :nth-child(3),
+.paras :nth-child(4)
+{
+    font-size:30px;
+}*/
+
+.paras :nth-child(2) {
+    display: none;
+}
+
+.paras :last-child {
+    color: blue;
+}
+
+
+/* Main Navigation */
+
+.main-nav {
+    /* border:1px solid red; */
+    background-color: gray;
+    width: 100%;
+    /* main-nav becomes a flex Container */
+    display: flex;
+    /* row is the default flex-direction*/
+    flex-direction: row;
+    /* Position content to the end/right side of the nav/along the main axis -- in this case horizontally */
+    justify-content: flex-end;
+    /* Center the content inside the nav along the cross axis -- in this case vertically */
+    align-items: center;
+}
+
+.logo {
+    /* border:1px solid red; */
+    /* position the logo to the left end of the nav bar */
+    margin-right: auto;
+}
+
+.main-nav ul {
+    /* border: 1px solid red; */
+    list-style-type: none;
+}
+
+.main-nav ul li {
+    /* border: 1px solid red; */
+    display: inline-block;
+    padding: 20px;
+}

@@ -1,0 +1,44 @@
+/*
+    Code Demo - CSC 225
+    Thursday, March 9, 2023
+*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-radius;
+    border:1px solid red;
+}
+/*
+body{
+    display:grid;
+    grid-template-areas:'header header header header'
+    'aside main main main'
+    'footer footer footer footer';
+    font-size:2rem;
+}
+header{grid-area:header;}
+main{
+    grid-area:main;
+    height:80vw;
+}
+aside{grid-area:aside;}
+footer{grid-area:footer;}
+*/
+
+body{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows 80px repeat : 
+}
+
+header{
+    grid-column: 1/-1;
+}
+
+main{
+    grid-column: 1/4;
+}
+
+footer{
+    grid-column: 4/5;
+}
